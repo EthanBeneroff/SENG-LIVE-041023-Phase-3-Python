@@ -8,6 +8,7 @@
 # 🚨 To enable ipdb debugging, first import "ipdb"
 import ipdb
 
+
 # 1. ✅ Create a condition to check a pet's mood
     # If "pet_mood" is "Hungry!", "Rose needs to be fed."
     # If "pet_mood" is "Rowdy!", "Rose needs a walk."
@@ -18,9 +19,22 @@ import ipdb
 pet_mood = "Hungry!"
 pet_name = "Rose"
 
+
+#if pet_mood == "Hungry!":
+#    print("Rose needs to be fed.")
+#elif pet_mood == "Rowdy":
+#    print("Rose needs a walk.")
+#else:
+#    print("Rose is all good.")
+
 # 2. ✅ Create a ternary operator using "pet_mood" as a condition:
     # If pet_food is "Hungry!" => "Rose needs to be fed."
     # In all other cases => "Rose is all good."
+
+print("Rose needs to be fed.") if pet_mood == "Hungry!" else print("Rose is all good.")
+
+
+
 
 # 3. ✅ Create a function (say_hello) that returns the string "Hello, world!"
     # Test invocation of "say_hello" in ipdb using "say_hello()"
